@@ -175,6 +175,7 @@ class ModelTrainer:
         self.model.load_state_dict(best_weights)
 
     def save_final_model(self, save_path: Path):
+        self.model.eval()
         torch.save(self.model, save_path / "final_model.pt")
 
     def _train_epoch(

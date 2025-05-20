@@ -91,7 +91,7 @@ if __name__ == "__main__":
         classes,
         img_size=224,
         dataset_type="train",
-        batch_size=64
+        batch_size=32
     )
     val_loader = load_data(
         val_paths,
@@ -99,7 +99,7 @@ if __name__ == "__main__":
         classes,
         img_size=224,
         dataset_type="val",
-        batch_size=128
+        batch_size=64
     )
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
