@@ -19,13 +19,13 @@ parser.add_argument(
     "--model_path",
     type=Path,
     required=True,
-    help="Path to "
+    help="Path to the trained model"
 )
 parser.add_argument(
     "--results_dir",
     type=Path,
     default="./results",
-    help="Directory path where result of a model should be saved"
+    help="Directory path where the result of a model will be saved"
 )
 args = parser.parse_args()
 

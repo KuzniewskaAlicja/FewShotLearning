@@ -20,13 +20,13 @@ parser.add_argument(
     "--patience",
     type=int,
     default=5,
-    help="Number of epoch for waiting for model improvement"
+    help="Number of epoch to wait for model improvement"
 )
 parser.add_argument(
     "--save_path",
     type=Path,
     default=Path("./models"),
-    help="Directory where model will be saved"
+    help="Directory where the model will be saved"
 )
 
 args = parser.parse_args()
